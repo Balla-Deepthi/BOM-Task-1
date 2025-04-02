@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img
+        {
+            width: 120px;
+        }
+        #container
+        {
+              display: grid;
+              grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+              padding: 10px;
+              gap: 10px;
+        }
+        #container>div
+        {
+            border:2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        #btn-container
+        {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding: 1rem;
+        }
+        button
+        {
+            padding:  0.8rem;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="btn-container"></div>
+    <div id="container"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
